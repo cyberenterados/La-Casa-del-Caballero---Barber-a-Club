@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Casa del Caballero - Barbería & Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">LA CASA DEL CABALLERO</span>
+                <span class="logo-subtext">BARBERÍA & CLUB</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre Nosotros</a>
+                <a href="#services" class="nav-link">Servicios</a>
+                <a href="#gallery" class="nav-link">Cortes</a>
+                <a href="#booking" class="nav-link btn-gold">Reservar Turno</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="barber-pole"></div>
+            <h1 class="hero-title">Estilo, Navaja & Tradición</h1>
+            <p class="hero-subtitle">Rescatamos la elegancia del cuidado personal masculino. Un refugio donde el tiempo se detiene al ritmo del acero sobre el cuero.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Reservar Sillón</a>
+                <a href="#services" class="btn btn-outline">Ver Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-subtitle">NUESTRA FILOSOFÍA</span>
+                    <h2 class="section-title">La Casa del Caballero</h2>
+                    <p class="paragraph">No abrimos las puertas para despachar cortes en serie; nacimos para rescatar la pausada elegancia del cuidado personal masculino. En un mundo acelerado, creamos un refugio donde el tiempo se detiene.</p>
+                    <p class="paragraph">Aquí cada cita es un ritual. Desde el aroma a madera de roble y navaja bien afilada, hasta el sonido sordo del sillón reclinable y el primer sorbo de un whisky ahumado o un café de especialidad.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-whiskey-glass"></i>
+                            <span>Bebida de cortesía</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-scissors"></i>
+                            <span>Maestros Artesanos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <span>Atención Tradicional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Interior Barberia Vintage" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú de Servicios & Precios -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">CARTEL DE PRECIOS</span>
+                <h2 class="section-title">Rituales de Estilo</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3 class="service-name">Corte Tradicional & Signature</h3>
+                        <span class="service-price">$18.000</span>
+                    </div>
+                    <p class="service-desc">Tijeras, navaja y carácter. Asesoría según fisonomía facial, lavado con masaje revitalizante y peinado con pomada mate o brillante.</p>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 45 min</span>
+                        <button class="btn-select-service" data-service="Corte Tradicional">Seleccionar</button>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3 class="service-name">Ritual de Barba a la Vieja Escuela</h3>
+                        <span class="service-price">$14.000</span>
+                    </div>
+                    <p class="service-desc">Aceites botánicos, toallas al vapor impregnadas con eucalipto, afeitado a navaja tradicional y bálsamo hidratante de autor.</p>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 35 min</span>
+                        <button class="btn-select-service" data-service="Ritual de Barba">Seleccionar</button>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card featured">
+                    <div class="badge">Recomendado</div>
+                    <div class="service-header">
+                        <h3 class="service-name">El Servicio Ejecutivo</h3>
+                        <span class="service-price">$28.000</span>
+                    </div>
+                    <p class="service-desc">La experiencia integral: Corte completo + Ritual de Barba + tratamiento térmico facial y bebida de cortesía privada.</p>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 75 min</span>
+                        <button class="btn-select-service" data-service="Servicio Ejecutivo">Seleccionar</button>
+                    </div>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <h3 class="service-name">Camuflaje de Canas & Matizado</h3>
+                        <span class="service-price">$12.000</span>
+                    </div>
+                    <p class="service-desc">Pigmentación sutil de rápida acción para atenuar canas con tono parejo, sobrio y acabado de textura natural.</p>
+                    <div class="service-footer">
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 20 min</span>
+                        <button class="btn-select-service" data-service="Camuflaje de Canas">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería / Modelos de Cortes -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">INSPIRACIÓN & ESTILO</span>
+                <h2 class="section-title">Modelos de Cortes</h2>
+            </div>
+
+            <!-- Filtros -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fade">Degradados / Fade</button>
+                <button class="filter-btn" data-filter="classic">Clásicos</button>
+                <button class="filter-btn" data-filter="beard">Barbas</button>
+            </div>
+
+            <!-- Grid Galería -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="fade">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Low Fade">
+                    <div class="gallery-overlay">
+                        <h4>Mid / Low Fade</h4>
+                        <p>Texturizado superior con degradado limpio</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=600&q=80" alt="Executive Contour">
+                    <div class="gallery-overlay">
+                        <h4>Executive Contour</h4>
+                        <p>Corte clásico raya al lado pulido a navaja</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="beard">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Ritual de Barba">
+                    <div class="gallery-overlay">
+                        <h4>Barba Esculpida</h4>
+                        <p>Perfilado preciso y tratamiento de hidratación</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fade">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Crop Top">
+                    <div class="gallery-overlay">
+                        <h4>Textured Crop</h4>
+                        <p>Estilo moderno urbano con flequillo recto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turnos & Reservas -->
+    <section id="booking" class="section booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="section-header">
+                    <span class="section-subtitle">AGENDÁ TU EXPERIENCIA</span>
+                    <h2 class="section-title">Solicitar Turno</h2>
+                </div>
+
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono / WhatsApp</label>
+                        <input type="tel" id="phone" required placeholder="Ej. +54 11 1234 5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-select">Servicio Deseado</label>
+                        <select id="service-select" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="Corte Tradicional">Corte Tradicional & Signature ($18.000)</option>
+                            <option value="Ritual de Barba">Ritual de Barba a la Vieja Escuela ($14.000)</option>
+                            <option value="Servicio Ejecutivo">El Servicio Ejecutivo ($28.000)</option>
+                            <option value="Camuflaje de Canas">Camuflaje de Canas & Matizado ($12.000)</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Fecha</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Hora</label>
+                            <select id="time" required>
+                                <option value="" disabled selected>Hora</option>
+                                <option value="11:00">11:00 HS</option>
+                                <option value="12:30">12:30 HS</option>
+                                <option value="15:00">15:00 HS</option>
+                                <option value="16:30">16:30 HS</option>
+                                <option value="18:00">18:00 HS</option>
+                                <option value="19:30">19:30 HS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva vía WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>LA CASA DEL CABALLERO</h3>
+                <p>Cortes clásicos, navaja fina y un espacio diseñado para tu descanso.</p>
+            </div>
+            <div class="footer-info">
+                <p><i class="fa-solid fa-location-dot"></i> Av. Corrientes 1234, Buenos Aires</p>
+                <p><i class="fa-solid fa-clock"></i> Martes a Sábados: 11:00 - 20:00 hs</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +54 9 11 9876-5432</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Casa del Caballero. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
